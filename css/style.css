@@ -28,12 +28,26 @@ p{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+strong{
+  color: rgb(236, 247, 93);
+  font-weight: 100;
+  font-style: italic;
+}
+
+b{
+  color: rgb(196, 87, 87);
+}
+
+em{
+  color: rgb(108, 199, 108);
+}
+
 #cats{
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 20px;
-  font-size: 2em;
-  color: rgb(8, 59, 57);
-  background-color: rgb(221, 177, 126);
+  font-size: 35pt;
+  color: rgb(0, 0, 0);
+  background-color: rgb(225, 169, 233);
   border-radius: 20px;
 }
 
