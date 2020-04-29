@@ -1,28 +1,37 @@
 'use strict';
 
-var howManyCats = prompt('Do you think I have 4 cats?');
+// geting the users name
 
-var alwaysEating = prompt('Do you think Im constantly eating in class while coding?')
+var userName = prompt('Howdy, what is your name?');
 
-// if they did watch Tiger King, I want to say 'Did Carol Baskin Kill her husband?'
-// if they didn't watch Tiger King, I want to say 'Sorry'
+// personalized welcome to page
 
-if(howManyCats.toLowerCase() === 'yes'){
-  alert('More cats the better!');
+alert('Welcome ' + userName + ' to a page all about me! Let us see what you can guess about me, good luck!');
+
+// guess if I have 4 cats
+
+var howManyCats = prompt(userName + ' do you think I have 4 cats?').toLowerCase();
+
+if(howManyCats.toLowerCase() === 'yes' || howManyCats.toLowerCase() === 'y'){
+  alert('YES! ' + userName + ' more cats the better!');
 } else if (howManyCats.toLowerCase() === 'no'){
-  alert('Sorry try again');
+  alert(userName + ' I know I do not always have cats falling off of me but I do in fact have 4 cats.');
+} else {
+  prompt(userName + ' please answer with yes or no');
+}
+
+// guess if I'm always eating
+
+var alwaysEating = prompt('Do you think Im constantly eating in class while coding?');
+
+if(alwaysEating.toLowerCase() === 'yes'){
+  alert('That is correct ' + userName + ' coding needs brain food, snacks all every day!');
+} else if (alwaysEating.toLowerCase() === 'no'){
+  alert('That is very kind of you ' + userName + ' but I am always eating and probably eating right now.');
 } else{
-  prompt('Please answer with yes or no');
+  prompt(userName + ' please answer with yes or no');
 }
 
 
 
-// if(watchedTigarKing === 'yes'){
-//   // do something
-// }
 
-// if (watchedTigarKing === 'yes'){
-//   // do something
-// }else {
-//   //do somthing else
-// }

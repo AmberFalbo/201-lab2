@@ -1,13 +1,13 @@
 *{
-  background-color: rgb(156, 225, 235);
+  background-color: rgb(0, 0, 0);
 }
 
 
 h1{
-  background-color: rgb(76, 82, 82);
-  font-family: "Helvetica", sans-serif;
-  padding: 10px;
-  color: rgb(210, 213, 214);
+  text-align: center;
+  font-family: cursive;
+  color: cornsilk;
+  padding: 30px;
   font-size: 3em;
   border-radius: 15px;
 }
@@ -16,32 +16,38 @@ body{
   padding-left: 20px;
 }
 
+main{
+  padding-right: 30%;
+  padding-left: 15%;
+}
+
 p{
   font-size: 16pt;
-  padding: 3px;
-  color: rgb(10, 10, 65);
+  padding: 10px;
+  color: rgb(133, 213, 228);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #cats{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 20px;
   font-size: 2em;
+  color: rgb(8, 59, 57);
+  background-color: rgb(221, 177, 126);
+  border-radius: 20px;
 }
 
 ul {
-  color: rgb(36, 36, 39);
+  padding: 20px;
   font-family: cursive;
-  padding: 10px;
-  list-style: square;
+  list-style: circle;
 }
 
 li{
-  border: darkblue;
-  border-width: 4px;
   border-radius: 15px;
-  padding: 5px;
-  background-color: cornsilk;
+  padding: 20px;
+  color: cornsilk;
+  font-size: 30pt;
 }
 
 
