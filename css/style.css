@@ -33,6 +33,12 @@ p{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.intro{
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 40px;
+}
+
 strong{
   color: rgb(236, 247, 93);
   font-weight: 100;
@@ -54,22 +60,53 @@ em{
   color: rgb(0, 0, 0);
   background-color: rgb(225, 169, 233);
   border-radius: 20px;
+  display: inline-block;
+}
+section{
+  width: 90%;
 }
 
-ul {
+div{
+ padding-bottom: 20px;
+ display: inline-block;
+} 
+
+.catPics{
+  text-align: left;
+  color: pink;
+}
+
+h2{
+  color: aqua;
+  font-size: 40px;
   padding: 20px;
-  font-family: cursive;
-  list-style: circle;
 }
 
-li{
-  border-radius: 15px;
-  padding: 20px;
-  color: cornsilk;
-  font-size: 30pt;
+ol{
+  color: aqua;
+  list-style-type: decimal;
+  font-size: 20px;
+  padding-bottom: 60px;
 }
 
+a{
+  padding-left: 30%;
+}
 
+a:link{
+  color: rgb(20, 208, 255);
+  text-decoration: gold;
+}
+a:visited{
+  color: blueviolet;
+}
+a:hover{
+  color: rgb(231, 229, 108);
+  text-decoration: underline;
+}
+a:active{
+  color: beige;
+}
 
 
 /* top top bottom */
