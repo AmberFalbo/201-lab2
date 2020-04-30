@@ -124,12 +124,12 @@ if(i === 4){
 
 var guessedCorrect = false;
 var myCreatures = ['Lucipurr', 'Ethel', 'Spaceghost', 'Harry Winston'];
-//              0           1          2               3
+//                       0           1          2               3
 
 
-for(var j = 0; j < 6; j++){
+for(var j = 0; j < 6; j++){ // loop through the number of guesses
   var guess =  prompt('Guess what the name is of one of my many cats!');
-  for(var k=0; k < myCreatures.length; k++){
+  for(var k=0; k < myCreatures.length; k++){ // loop there each position of the array to compare user answer with te correct answers
     console.log(myCreatures[k]);
 
     if(guess === myCreatures[k]){
@@ -137,7 +137,7 @@ for(var j = 0; j < 6; j++){
       guessedCorrect = true;
       // console.log('correct');
       counter = counter + 1;
-      break;
+      break;//will only break us out of the inner for loop
     }
   }
 
