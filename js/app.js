@@ -93,6 +93,9 @@ if(venture.toLowerCase() === 'yes' || venture.toLowerCase() === 'y'){
   prompt(userName + ' please answer with yes or no');
 }
 
+
+// question 6 number guessing game
+
 var matteNumber = 15;
 
 
@@ -116,12 +119,13 @@ if(i === 4){
   alert('I\'m sorry you couldn\'t guess my matte amount but the answer is 15!');
 }
 
+
+// question 7
+
 var guessedCorrect = false;
 var myCreatures = ['Lucipurr', 'Ethel', 'Spaceghost', 'Harry Winston'];
 //              0           1          2               3
 
-
-// for(starting value; number of ties we run the loops/condition; how many time we increment){ do something }
 
 for(var j = 0; j < 6; j++){
   var guess =  prompt('Guess what the name is of one of my many cats!');
