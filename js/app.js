@@ -94,70 +94,70 @@ function teamVenture(){
   }
 }
 
+// question 6 number guessing game
+function matteGame(){
+  var matteNumber = 15;
+
+  for(var i = 0; i < 4; i++){
+    var matte = prompt(userName + ' how many cups of matte do you think I have in a day?');
+    matte = parseInt(matte);
+
+    if(matteNumber === matte){
+      alert('Dang ' + userName + ' you are good!');
+      // console.log('correct');
+      counter = counter + 1;
+      break;
+    } else if (matte > matteNumber) {
+      alert('Sorry, your guess is too high!');
+    } else if (matte < matteNumber) {
+      alert('Sorry, your guess is too low, I need more caffeine then that!');
+    }
+  }
+
+  if(i === 4){
+    alert('I\'m sorry you couldn\'t guess my matte amount but the answer is 15!');
+  }
+}
+
+// question 7: guess my cats
+function crazyCatLady(){
+  var guessedCorrect = false;
+  var myCreatures = ['lucipurr', 'ethel', 'spaceghost', 'harry winston'];
+  //                       0           1          2               3
+
+  for(var j = 0; j < 6; j++){ // loop through the number of guesses
+    var guess =  prompt('Guess what the name is of one of my many cats!').toLowerCase();
+    for(var k=0; k < myCreatures.length; k++){ // loop there each position of the array to compare user answer with te correct answers
+      console.log(myCreatures[k]);
+
+      if(guess === myCreatures[k]){
+        alert('You got it! That is one of my creatures!');
+        guessedCorrect = true;
+        // console.log('correct');
+        counter = counter + 1;
+        break;//will only break us out of the inner for loop
+      }
+    }
+
+    if(guessedCorrect){
+      // if guessedCorrect is true
+      break;
+    } else if (j < 5) {
+      alert('Sorry please try again!');
+    }
+  }
+}
+
 //Call the yes or no questions
 catAmount();
 foodMonster();
 bracesFace();
 planeJumper();
 teamVenture();
-
-// question 6 number guessing game
-
-var matteNumber = 15;
-
-
-for(var i = 0; i < 4; i++){
-  var matte = prompt(userName + ' how many cups of matte do you think I have in a day?');
-  matte = parseInt(matte);
-
-  if(matteNumber === matte){
-    alert('Dang ' + userName + ' you are good!');
-    // console.log('correct');
-    counter = counter + 1;
-    break;
-  } else if (matte > matteNumber) {
-    alert('Sorry, your guess is too high!');
-  } else if (matte < matteNumber) {
-    alert('Sorry, your guess is too low, I need more caffine then that!');
-  }
-}
-
-if(i === 4){
-  alert('I\'m sorry you couldn\'t guess my matte amount but the answer is 15!');
-}
-
-
-// question 7
-
-var guessedCorrect = false;
-var myCreatures = ['Lucipurr', 'Ethel', 'Spaceghost', 'Harry Winston'];
-//                       0           1          2               3
-
-
-for(var j = 0; j < 6; j++){ // loop through the number of guesses
-  var guess =  prompt('Guess what the name is of one of my many cats!');
-  for(var k=0; k < myCreatures.length; k++){ // loop there each position of the array to compare user answer with te correct answers
-    console.log(myCreatures[k]);
-
-    if(guess === myCreatures[k]){
-      alert('You got it! That is one of my creatures!');
-      guessedCorrect = true;
-      // console.log('correct');
-      counter = counter + 1;
-      break;//will only break us out of the inner for loop
-    }
-  }
-
-  if(guessedCorrect){
-    // if guessedCorrect is true
-    break;
-  } else if (j < 5) {
-    alert('Sorry please try again!');
-  }
-
-}
-
-
+//Call matteGame
+matteGame();
+// Call the crazy cat lady game
+crazyCatLady();
 
 alert('I\'m sure you are very curious so here are all of the names of my creatures, Lucipurr, Ethel, Spaceghost, and Harry Winsten!');
 
