@@ -129,10 +129,10 @@ var myCreatures = ['Lucipurr', 'Ethel', 'Spaceghost', 'Harry Winston'];
 
 for(var j = 0; j < 6; j++){
   var guess =  prompt('Guess what the name is of one of my many cats!');
-  for(var h=0; h < myCreatures.length; h++){
-    console.log(myCreatures[h]);
+  for(var k=0; k < myCreatures.length; k++){
+    console.log(myCreatures[k]);
 
-    if(guess === myCreatures[h]){
+    if(guess === myCreatures[k]){
       alert('You got it! That is one of my creatures!');
       guessedCorrect = true;
       // console.log('correct');
