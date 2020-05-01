@@ -148,16 +148,12 @@ function crazyCatLady(){
   }
 }
 
-//Call the yes or no questions
-catAmount();
-foodMonster();
-bracesFace();
-planeJumper();
-teamVenture();
-//Call matteGame
-matteGame();
-// Call the crazy cat lady game
-crazyCatLady();
+// array to call all questions
+var questionMaster = [catAmount(), foodMonster(), bracesFace(), planeJumper(), teamVenture(), matteGame(), crazyCatLady()];
+
+for(var m = 0; m < questionMaster.length; m++){
+  questionMaster[m];
+}
 
 alert('I\'m sure you are very curious so here are all of the names of my creatures, Lucipurr, Ethel, Spaceghost, and Harry Winsten!');
 
