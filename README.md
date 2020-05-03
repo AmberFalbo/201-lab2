@@ -2,8 +2,11 @@
 
 Add directions for assignment!!
 
+## Accessibility Score
 
 ![accessibility](./img/accessibility.png)
+
+
 
 I was Navigator: Amber Falbo
 <br>
